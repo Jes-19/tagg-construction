@@ -28,7 +28,7 @@ const highlights = [
   "SSSTS and SMSTS qualified teams",
   "Compliance with BS 5975 standards",
   "Temporary Works Forum Member",
-  "In-house Temporary Works Coordinator (TWC) and Temporary Works Supervisors (TWS)",
+  "In-house Temporary Works Coordinator & Supervisors",
 ]
 
 export function About() {
