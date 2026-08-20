@@ -9,7 +9,7 @@ const _spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Tagg Construction Ltd | Hoarding & Temporary Fencing',
-  description: 'Professional construction hoarding and temporary fencing for construction sites. Safe, compliant, and presentable site boundaries with over 29 years of industry experience.',
+  description: 'Professional construction hoarding and temporary fencing for construction sites. Safe, compliant, and presentable site boundaries, established for 32 years.',
   generator: 'v0.app',
   icons: {
     icon: '/favicon.png',
