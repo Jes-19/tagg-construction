@@ -17,17 +17,18 @@ const features = [
   {
     icon: Wrench,
     title: "Installation",
-    description: "With over 29 years of industry experience, we provide expertise, proven knowledge, and innovative solutions. Our teams are led by SSSTS-trained supervisors and SMSTS-qualified project managers.",
+    description: "Established for 32 years, we provide expertise, proven knowledge, and innovative solutions. Our teams are led by SSSTS-trained supervisors and SMSTS-qualified project managers.",
     color: "#03873c",
   },
 ]
 
 const highlights = [
-  "Over 29 years of industry experience",
+  "Established for 32 years",
   "CHAS and SMAS accredited",
   "SSSTS and SMSTS qualified teams",
   "Compliance with BS 5975 standards",
   "Temporary Works Forum Member",
+  "In-house Temporary Works Coordinator & Supervisors",
 ]
 
 export function About() {
