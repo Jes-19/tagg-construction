@@ -181,7 +181,7 @@ export function ServicesDetail() {
           {services.map((service) => (
             <div key={service.title} className="rounded-2xl border border-border bg-card overflow-hidden">
               {service.image && (
-                <div className="relative aspect-[16/7] w-full">
+                <div className="relative h-56 md:h-64 w-full">
                   <Image
                     src={service.image.src || "/placeholder.svg"}
                     alt={service.image.alt}
@@ -193,9 +193,9 @@ export function ServicesDetail() {
               )}
 
               {service.images && (
-                <div className="grid grid-cols-3 gap-0.5 bg-border">
+                <div className="grid grid-cols-3 gap-0.5 bg-border h-56 md:h-64">
                   {service.images.map((img) => (
-                    <div key={img.src} className="relative aspect-[4/3] w-full">
+                    <div key={img.src} className="relative h-full w-full">
                       <Image
                         src={img.src || "/placeholder.svg"}
                         alt={img.alt}
