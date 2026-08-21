@@ -99,7 +99,7 @@ const services = [
     image: {
       src: "/images/gallery/site-security-composite.jpg",
       alt: "Black mesh security fencing around a crane base, a concrete vehicle security barrier, and a mobile CCTV security tower",
-      className: "object-cover",
+      className: "object-contain bg-muted",
     },
   },
   {
