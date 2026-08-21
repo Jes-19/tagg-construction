@@ -5,7 +5,6 @@ import Link from "next/link"
 
 const services = [
   {
-    number: "01",
     icon: Building2,
     title: "Hoarding Systems",
     description:
@@ -20,7 +19,6 @@ const services = [
     color: "#03873c",
   },
   {
-    number: "02",
     icon: Fence,
     title: "Heras Fencing & Tree Protection",
     description:
@@ -36,7 +34,6 @@ const services = [
     color: "#0367c4",
   },
   {
-    number: "03",
     icon: DoorOpen,
     title: "Site Access Options",
     description:
@@ -52,7 +49,6 @@ const services = [
     color: "#03873c",
   },
   {
-    number: "04",
     icon: Compass,
     title: "Temporary Works Design Services",
     description:
@@ -69,7 +65,6 @@ const services = [
     color: "#0367c4",
   },
   {
-    number: "05",
     icon: ShieldCheck,
     title: "Site Security",
     description:
@@ -85,7 +80,6 @@ const services = [
     color: "#03873c",
   },
   {
-    number: "06",
     icon: PaintBucket,
     title: "Signage, Branding & Decoration",
     description:
@@ -128,17 +122,11 @@ export function ServicesDetail() {
         <div className="space-y-8 max-w-5xl mx-auto">
           {services.map((service) => (
             <div
-              key={service.number}
+              key={service.title}
               className="rounded-2xl border border-border bg-card p-8 md:p-10"
             >
               <div className="grid md:grid-cols-[auto_1fr] gap-6 md:gap-10">
                 <div className="flex md:flex-col items-center md:items-start gap-4">
-                  <span
-                    className="font-mono text-sm font-bold tracking-wider"
-                    style={{ color: service.color }}
-                  >
-                    {service.number}
-                  </span>
                   <div
                     className="w-14 h-14 rounded-xl flex items-center justify-center"
                     style={{ backgroundColor: `${service.color}15` }}
