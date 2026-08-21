@@ -7,6 +7,17 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
+    src: "/images/gallery/site-entrance-gates.jpeg",
+    alt: "Construction site entrance with large metal gates and branded hoarding",
+    description: "Site Entrance Gates & Hoarding",
+  },
+  {
+    src: "/images/gallery/field-mesh-fencing.png",
+    alt: "Galvanised mesh fencing running across an open field for tree protection",
+    description: "Tree Protection Fencing Installed in Accordance with BS 5837:2012 Figure 2 – Default Specification",
+    className: "object-cover object-[center_60%]",
+  },
+  {
     src: "/images/gallery/timber-fence.png",
     alt: "Timber slatted fencing installation on a green hillside",
     description: "Hit and Miss Compound - Timber Slatted",
@@ -35,14 +46,20 @@ const projects = [
     className: "object-contain bg-muted",
   },
   {
-    src: "/images/gallery/site-entrance-gates.jpeg",
-    alt: "Construction site entrance with large metal gates and branded hoarding",
-    description: "Site Entrance Gates & Hoarding",
-  },
-  {
     src: "/images/gallery/timber-walkway-cover.jpeg",
     alt: "Timber frame walkway cover structure on a construction site",
     description: "Timber Walkway Protection Cover",
+  },
+  {
+    src: "/images/gallery/pedestrian-walkway.jpeg",
+    alt: "Segregated pedestrian walkway on a construction site with mesh fencing and red and white barriers",
+    description: "Proprietary Fence-Lok System with Pull-Out Testing",
+    className: "object-cover object-[center_40%]",
+  },
+  {
+    src: "/images/gallery/silt-fencing.png",
+    alt: "Green newt fencing on timber stakes running across a grassy field",
+    description: "Newt Fencing",
   },
 ]
 
@@ -65,7 +82,7 @@ export function Gallery() {
             Our Work
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
-            Previous Projects
+            Installed Solutions
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-[#03873c] to-[#0367c4] mx-auto mb-6" />
           <p className="text-muted-foreground max-w-2xl mx-auto text-pretty">

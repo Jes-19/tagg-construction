@@ -10,20 +10,20 @@ const services = [
   },
   {
     icon: Fence,
-    title: "Heras Systems",
+    title: "Heras & Tree Protection",
     description: "Cost-effective perimeter control systems used to prevent unauthorised access and to form compliant exclusion or tree protection zones across construction sites.",
     color: "#0367c4",
   },
   {
     icon: DoorOpen,
     title: "Access Options",
-    description: "A range of controlled access solutions including pedestrian gates, vehicle gates, and turnstiles to safely manage site entry and exit points.",
+    description: "A range of standard stock and bespoke access solutions, including pedestrian gates, vehicle gates, bi-fold gates and turnstiles, providing secure and controlled access to construction sites.",
     color: "#03873c",
   },
   {
     icon: Compass,
     title: "Design Services",
-    description: "A full temporary works documentation package supporting safe, compliant installation, including drawings, structural calculations, BS 5975 Category 1 certification, and design risk assessments.",
+    description: "We provide a comprehensive temporary works documentation package to support safe and compliant installation, including typical spacing and detail drawings, structural calculations, BS 5975 Category 1, 2 or 3 design checks and certification, a designer's risk assessment, and a document issue register.",
     color: "#0367c4",
   },
   {
