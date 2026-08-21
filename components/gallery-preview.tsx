@@ -22,7 +22,12 @@ const previewProjects = [
   {
     src: "/images/gallery/site-entrance-gates.jpeg",
     alt: "Construction site entrance with large metal gates and branded hoarding",
-    description: "Site Entrance Gates & Hoarding",
+    description: "Ballasted Entrance Gates & Hoarding",
+  },
+  {
+    src: "/images/gallery/field-mesh-fencing.png",
+    alt: "Galvanised mesh fencing running across an open field for tree protection",
+    description: "Tree Protection Fencing Installed in Accordance with BS 5837:2012 Figure 2 – Default Specification",
   },
 ]
 
