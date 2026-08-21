@@ -35,7 +35,7 @@ export function GalleryPreview() {
             Our Work
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
-            Previous Projects
+            Installed Solutions
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-[#03873c] to-[#0367c4] mx-auto mb-6" />
           <p className="text-muted-foreground max-w-2xl mx-auto text-pretty">
