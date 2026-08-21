@@ -115,6 +115,18 @@ export function ServicesDetail() {
             <Badge variant="secondary" className="px-4 py-1.5 text-sm font-medium">
               BS 5975 Compliant
             </Badge>
+            <Badge
+              variant="outline"
+              className="px-4 py-1.5 text-sm font-medium border-[#0367c4]/30 bg-[#0367c4]/10 text-[#0367c4]"
+            >
+              Constructionline
+            </Badge>
+            <Badge
+              variant="outline"
+              className="px-4 py-1.5 text-sm font-medium border-[#0367c4]/30 bg-[#0367c4]/10 text-[#0367c4]"
+            >
+              CQMS
+            </Badge>
           </div>
         </div>
 
