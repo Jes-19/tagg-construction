@@ -7,6 +7,17 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
+    src: "/images/gallery/site-entrance-gates.jpeg",
+    alt: "Construction site entrance with large metal gates and branded hoarding",
+    description: "Site Entrance Gates & Hoarding",
+  },
+  {
+    src: "/images/gallery/field-mesh-fencing.png",
+    alt: "Galvanised mesh fencing running across an open field for tree protection",
+    description: "Tree Protection Fencing Installed in Accordance with BS 5837:2012 Figure 2 – Default Specification",
+    className: "object-cover object-[center_60%]",
+  },
+  {
     src: "/images/gallery/timber-fence.png",
     alt: "Timber slatted fencing installation on a green hillside",
     description: "Hit and Miss Compound - Timber Slatted",
@@ -35,11 +46,6 @@ const projects = [
     className: "object-contain bg-muted",
   },
   {
-    src: "/images/gallery/site-entrance-gates.jpeg",
-    alt: "Construction site entrance with large metal gates and branded hoarding",
-    description: "Site Entrance Gates & Hoarding",
-  },
-  {
     src: "/images/gallery/timber-walkway-cover.jpeg",
     alt: "Timber frame walkway cover structure on a construction site",
     description: "Timber Walkway Protection Cover",
@@ -54,12 +60,6 @@ const projects = [
     src: "/images/gallery/silt-fencing.png",
     alt: "Green newt fencing on timber stakes running across a grassy field",
     description: "Newt Fencing",
-  },
-  {
-    src: "/images/gallery/field-mesh-fencing.png",
-    alt: "Galvanised mesh fencing running across an open field for tree protection",
-    description: "Tree Protection Fencing Installed in Accordance with BS 5837:2012 Figure 2 – Default Specification",
-    className: "object-cover object-[center_60%]",
   },
 ]
 
