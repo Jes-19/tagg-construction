@@ -105,8 +105,8 @@ export function ServicesDetail() {
             Hoarding, Temporary Fencing & Site Security
           </h1>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            A full perimeter package for construction sites of any size — from initial temporary works design
-            through to installation, signage and ongoing security.
+            A full perimeter package for projects of any size — from survey, design, installation, alterations and
+            removals.
           </p>
           <div className="flex items-center justify-center gap-3 flex-wrap">
             <Badge variant="secondary" className="px-4 py-1.5 text-sm font-medium">
