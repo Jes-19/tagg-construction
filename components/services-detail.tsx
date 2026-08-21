@@ -123,14 +123,14 @@ const services = [
         flexBasis: "26.44%",
       },
       {
-        src: "/images/gallery/signage-tile-2.png",
-        alt: "Site office hoarding with printed Crossrail branding and graphics",
-        flexBasis: "26.44%",
-      },
-      {
         src: "/images/gallery/signage-tile-3.png",
         alt: "Red, yellow, orange and blue branded hoarding bays housing skips on a construction site",
         flexBasis: "47.12%",
+      },
+      {
+        src: "/images/gallery/signage-tile-2.png",
+        alt: "Site office hoarding with printed Crossrail branding and graphics",
+        flexBasis: "26.44%",
       },
     ],
   },
