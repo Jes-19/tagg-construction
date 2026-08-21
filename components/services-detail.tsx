@@ -14,7 +14,6 @@ const services = [
       "Concrete block-ballasted systems",
       "Scaffold-supported hoarding",
       "Floor-fixed metal bracket systems",
-      "Painted, branded and specialist finishes",
     ],
     color: "#03873c",
   },
@@ -103,7 +102,7 @@ export function ServicesDetail() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-primary font-medium uppercase tracking-wider text-sm">Our Services</span>
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6 text-balance">
-            Hoarding, Fencing & Site Security
+            Hoarding, Temporary Fencing & Site Security
           </h1>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
             A full perimeter package for construction sites of any size — from initial temporary works design
