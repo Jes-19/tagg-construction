@@ -100,18 +100,18 @@ const services = [
       {
         src: "/images/gallery/crane-security-fencing.jpeg",
         alt: "Black mesh security fencing installed around a crane base",
-        flexBasis: "34%",
+        flexBasis: "44%",
       },
       {
         src: "/images/gallery/mobile-cctv-tower.png",
         alt: "Yellow and red mobile CCTV security tower on a construction site",
-        flexBasis: "33%",
-        className: "object-contain bg-muted",
+        flexBasis: "14%",
+        className: "object-contain",
       },
       {
         src: "/images/gallery/concrete-security-barrier.png",
         alt: "Concrete temporary vehicle security barrier block",
-        flexBasis: "33%",
+        flexBasis: "42%",
       },
     ],
   },
