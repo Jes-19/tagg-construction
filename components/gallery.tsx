@@ -44,6 +44,23 @@ const projects = [
     alt: "Timber frame walkway cover structure on a construction site",
     description: "Timber Walkway Protection Cover",
   },
+  {
+    src: "/images/gallery/pedestrian-walkway.jpeg",
+    alt: "Segregated pedestrian walkway on a construction site with mesh fencing and red and white barriers",
+    description: "Segregated Pedestrian Walkway",
+    className: "object-cover object-[center_40%]",
+  },
+  {
+    src: "/images/gallery/silt-fencing.png",
+    alt: "Green silt fencing on timber stakes running across a grassy field",
+    description: "Silt Fencing Installation",
+  },
+  {
+    src: "/images/gallery/field-mesh-fencing.png",
+    alt: "Galvanised mesh temporary security fencing running across an open field",
+    description: "Temporary Security Fencing",
+    className: "object-cover object-[center_60%]",
+  },
 ]
 
 export function Gallery() {
