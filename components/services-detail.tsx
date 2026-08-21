@@ -116,11 +116,23 @@ const services = [
       "Specialist paint finishes",
     ],
     color: "#0367c4",
-    image: {
-      src: "/images/gallery/signage-branding-composite.png",
-      alt: "Three branded hoarding installations: yellow COSHH panels, a Crossrail-branded office hoarding, and colourful skip storage bays",
-      className: "object-cover",
-    },
+    images: [
+      {
+        src: "/images/gallery/signage-tile-1.png",
+        alt: "Yellow branded COSHH hoarding panels with black trim",
+        flexBasis: "26.44%",
+      },
+      {
+        src: "/images/gallery/signage-tile-2.png",
+        alt: "Site office hoarding with printed Crossrail branding and graphics",
+        flexBasis: "26.44%",
+      },
+      {
+        src: "/images/gallery/signage-tile-3.png",
+        alt: "Red, yellow, orange and blue branded hoarding bays housing skips on a construction site",
+        flexBasis: "47.12%",
+      },
+    ],
   },
 ]
 
@@ -177,6 +189,26 @@ export function ServicesDetail() {
                     loading="eager"
                     className={service.image.className || "object-cover"}
                   />
+                </div>
+              )}
+
+              {service.images && (
+                <div className="flex h-56 md:h-64 w-full">
+                  {service.images.map((img) => (
+                    <div
+                      key={img.src}
+                      className="relative h-full shrink-0"
+                      style={{ flexBasis: img.flexBasis }}
+                    >
+                      <Image
+                        src={img.src || "/placeholder.svg"}
+                        alt={img.alt}
+                        fill
+                        loading="eager"
+                        className="object-cover"
+                      />
+                    </div>
+                  ))}
                 </div>
               )}
 
