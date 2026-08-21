@@ -9,7 +9,7 @@ const projects = [
   {
     src: "/images/gallery/site-entrance-gates.jpeg",
     alt: "Construction site entrance with large metal gates and branded hoarding",
-    description: "Site Entrance Gates & Hoarding",
+    description: "Ballasted Entrance Gates & Hoarding",
   },
   {
     src: "/images/gallery/field-mesh-fencing.png",
@@ -30,7 +30,7 @@ const projects = [
   {
     src: "/images/gallery/site-hoarding-excavator.png",
     alt: "White site hoarding with green trim along a road",
-    description: "Roadside Site Hoarding Installation",
+    description: "In Ground Hoarding Installation",
     className: "object-cover object-[center_75%]",
   },
   {
