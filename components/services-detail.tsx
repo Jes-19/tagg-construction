@@ -96,11 +96,23 @@ const services = [
       "Crane Security",
     ],
     color: "#03873c",
-    image: {
-      src: "/images/gallery/crane-security-fencing.jpeg",
-      alt: "Black mesh security fencing installed around a crane base",
-      className: "object-contain bg-muted",
-    },
+    images: [
+      {
+        src: "/images/gallery/crane-security-fencing.jpeg",
+        alt: "Black mesh security fencing installed around a crane base",
+        flexBasis: "34%",
+      },
+      {
+        src: "/images/gallery/mobile-cctv-tower.png",
+        alt: "Yellow and red mobile CCTV security tower on a construction site",
+        flexBasis: "33%",
+      },
+      {
+        src: "/images/gallery/concrete-security-barrier.png",
+        alt: "Concrete temporary vehicle security barrier block",
+        flexBasis: "33%",
+      },
+    ],
   },
   {
     icon: PaintBucket,
