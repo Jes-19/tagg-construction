@@ -37,7 +37,7 @@ const projects = [
   {
     src: "/images/gallery/yellow-hoarding.png",
     alt: "Yellow branded hoarding panels with black trim",
-    description: "Branded Hoarding Installation",
+    description: "COSHH Branded Hoarding Area",
     className: "object-contain bg-muted",
   },
   {
