@@ -1,4 +1,10 @@
+import type { Metadata } from "next"
 import { Header } from "@/components/header"
+
+export const metadata: Metadata = {
+  title: "Tree Protection Fencing",
+}
+
 import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
 import { About } from "@/components/about"
