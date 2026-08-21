@@ -17,7 +17,7 @@ const services = [
   {
     icon: DoorOpen,
     title: "Access Options",
-    description: "A range of controlled access solutions including pedestrian gates, vehicle gates, and turnstiles to safely manage site entry and exit points.",
+    description: "A range of standard stock and bespoke access solutions, including pedestrian gates, vehicle gates, bi-fold gates and turnstiles, providing secure and controlled access to construction sites.",
     color: "#03873c",
   },
   {
