@@ -10,7 +10,7 @@ const services = [
   },
   {
     icon: Fence,
-    title: "Heras Systems",
+    title: "Heras & Tree Protection",
     description: "Cost-effective perimeter control systems used to prevent unauthorised access and to form compliant exclusion or tree protection zones across construction sites.",
     color: "#0367c4",
   },
