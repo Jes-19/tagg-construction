@@ -16,7 +16,7 @@ export default function ServicesPage() {
       <Header />
       <div className="pt-44">
         <ServicesDetail />
-        <Contact />
+        <Contact hideMaps />
       </div>
       <Footer />
     </main>
