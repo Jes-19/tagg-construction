@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Check, Building2, Fence, DoorOpen, Compass, ShieldCheck, PaintBucket, ArrowRight } from "lucide-react"
@@ -16,6 +17,11 @@ const services = [
       "Floor-fixed metal bracket systems",
     ],
     color: "#03873c",
+    image: {
+      src: "/images/gallery/site-hoarding-excavator.png",
+      alt: "White site hoarding with green trim installed along a road",
+      className: "object-cover object-[center_75%]",
+    },
   },
   {
     icon: Fence,
@@ -31,6 +37,10 @@ const services = [
       "Standard and reinforced fencing arrangements",
     ],
     color: "#0367c4",
+    image: {
+      src: "/images/gallery/heras-on-posts.png",
+      alt: "Heras hoarding panels installed on timber posts along a roadside",
+    },
   },
   {
     icon: DoorOpen,
@@ -46,6 +56,10 @@ const services = [
       "Custom solutions for restricted or unusual openings",
     ],
     color: "#03873c",
+    image: {
+      src: "/images/gallery/site-entrance-gates.jpeg",
+      alt: "Construction site entrance with large metal gates and branded hoarding",
+    },
   },
   {
     icon: Compass,
@@ -62,6 +76,11 @@ const services = [
       "Advice on suitability, buildability and cost-effective solutions",
     ],
     color: "#0367c4",
+    image: {
+      src: "/images/gallery/pedestrian-walkway.jpeg",
+      alt: "Proprietary Fence-Lok system with pull-out testing on a construction site walkway",
+      className: "object-cover object-[center_40%]",
+    },
   },
   {
     icon: ShieldCheck,
@@ -77,6 +96,11 @@ const services = [
       "Integrated perimeter security solutions",
     ],
     color: "#03873c",
+    image: {
+      src: "/images/gallery/crane-security-fencing.jpeg",
+      alt: "Black mesh security fencing installed around a crane base",
+      className: "object-contain bg-muted",
+    },
   },
   {
     icon: PaintBucket,
@@ -92,6 +116,11 @@ const services = [
       "Specialist paint finishes",
     ],
     color: "#0367c4",
+    image: {
+      src: "/images/gallery/yellow-hoarding.png",
+      alt: "Yellow branded COSHH hoarding panels with black trim",
+      className: "object-contain bg-muted",
+    },
   },
 ]
 
@@ -138,40 +167,51 @@ export function ServicesDetail() {
 
         <div className="space-y-8 max-w-5xl mx-auto">
           {services.map((service) => (
-            <div
-              key={service.title}
-              className="rounded-2xl border border-border bg-card p-8 md:p-10"
-            >
-              <div className="grid md:grid-cols-[auto_1fr] gap-6 md:gap-10">
-                <div className="flex md:flex-col items-center md:items-start gap-4">
-                  <div
-                    className="w-14 h-14 rounded-xl flex items-center justify-center"
-                    style={{ backgroundColor: `${service.color}15` }}
-                  >
-                    <service.icon className="h-7 w-7" style={{ color: service.color }} />
-                  </div>
+            <div key={service.title} className="rounded-2xl border border-border bg-card overflow-hidden">
+              {service.image && (
+                <div className="relative aspect-[16/7] w-full">
+                  <Image
+                    src={service.image.src || "/placeholder.svg"}
+                    alt={service.image.alt}
+                    fill
+                    loading="eager"
+                    className={service.image.className || "object-cover"}
+                  />
                 </div>
+              )}
 
-                <div>
-                  <h2 className="text-2xl font-bold text-foreground mb-3">{service.title}</h2>
-                  <p className="text-muted-foreground leading-relaxed mb-6">{service.description}</p>
+              <div className="p-8 md:p-10">
+                <div className="grid md:grid-cols-[auto_1fr] gap-6 md:gap-10">
+                  <div className="flex md:flex-col items-center md:items-start gap-4">
+                    <div
+                      className="w-14 h-14 rounded-xl flex items-center justify-center"
+                      style={{ backgroundColor: `${service.color}15` }}
+                    >
+                      <service.icon className="h-7 w-7" style={{ color: service.color }} />
+                    </div>
+                  </div>
 
-                  {service.itemsHeading && (
-                    <p className="text-sm font-semibold text-foreground mb-3">{service.itemsHeading}</p>
-                  )}
+                  <div>
+                    <h2 className="text-2xl font-bold text-foreground mb-3">{service.title}</h2>
+                    <p className="text-muted-foreground leading-relaxed mb-6">{service.description}</p>
 
-                  <ul className="grid sm:grid-cols-2 gap-3">
-                    {service.items.map((item) => (
-                      <li key={item} className="flex items-start gap-2.5">
-                        <Check
-                          className="h-4 w-4 mt-0.5 shrink-0"
-                          style={{ color: service.color }}
-                          aria-hidden="true"
-                        />
-                        <span className="text-sm text-foreground leading-relaxed">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                    {service.itemsHeading && (
+                      <p className="text-sm font-semibold text-foreground mb-3">{service.itemsHeading}</p>
+                    )}
+
+                    <ul className="grid sm:grid-cols-2 gap-3">
+                      {service.items.map((item) => (
+                        <li key={item} className="flex items-start gap-2.5">
+                          <Check
+                            className="h-4 w-4 mt-0.5 shrink-0"
+                            style={{ color: service.color }}
+                            aria-hidden="true"
+                          />
+                          <span className="text-sm text-foreground leading-relaxed">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
