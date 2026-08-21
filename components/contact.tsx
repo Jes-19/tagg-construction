@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label"
 import { Mail, MapPin, Phone, Clock, Send, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
-export function Contact() {
+export function Contact({ hideMaps = false }: { hideMaps?: boolean }) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState("")
@@ -67,6 +67,7 @@ export function Contact() {
         </div>
 
         {/* Office Location */}
+        {!hideMaps && (
         <div className="max-w-6xl mx-auto mb-12">
           <div className="grid lg:grid-cols-2 rounded-2xl overflow-hidden shadow-lg">
             <div className="bg-[#1e293b] text-white p-10 lg:p-12 flex flex-col justify-center">
@@ -127,8 +128,10 @@ export function Contact() {
             </div>
           </div>
         </div>
+        )}
 
         {/* Depot Location */}
+        {!hideMaps && (
         <div className="max-w-6xl mx-auto mb-16">
           <div className="grid lg:grid-cols-2 rounded-2xl overflow-hidden shadow-lg">
             <div className="bg-[#1e293b] text-white p-10 lg:p-12 flex flex-col justify-center">
@@ -169,6 +172,7 @@ export function Contact() {
             </div>
           </div>
         </div>
+        )}
         
         {/* Enquiry Form */}
         <div id="enquiry-form" className="max-w-6xl mx-auto">
