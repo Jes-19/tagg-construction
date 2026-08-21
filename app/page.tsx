@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { Header } from "@/components/header"
 
 export const metadata: Metadata = {
-  title: "In Ground Hoarding",
+  title: "Tree Protection Fencing",
 }
 
 import { Hero } from "@/components/hero"
