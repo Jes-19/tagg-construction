@@ -20,7 +20,7 @@ const services = [
     image: {
       src: "/images/gallery/site-hoarding-excavator.png",
       alt: "White site hoarding with green trim installed along a road",
-      className: "object-cover object-[center_75%]",
+      className: "object-contain bg-muted",
     },
   },
   {
