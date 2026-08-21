@@ -97,8 +97,8 @@ const services = [
     ],
     color: "#03873c",
     image: {
-      src: "/images/gallery/crane-security-fencing.jpeg",
-      alt: "Black mesh security fencing installed around a crane base",
+      src: "/images/gallery/site-security-composite.jpg",
+      alt: "Black mesh security fencing around a crane base, a concrete vehicle security barrier, and a mobile CCTV security tower",
       className: "object-contain bg-muted",
     },
   },
@@ -205,7 +205,7 @@ export function ServicesDetail() {
                         alt={img.alt}
                         fill
                         loading="eager"
-                        className="object-cover"
+                        className={img.className || "object-cover"}
                       />
                     </div>
                   ))}
