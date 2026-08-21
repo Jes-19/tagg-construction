@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { Header } from "@/components/header"
-import { Services } from "@/components/services"
+import { ServicesDetail } from "@/components/services-detail"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 
@@ -15,7 +15,7 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-background">
       <Header />
       <div className="pt-44">
-        <Services />
+        <ServicesDetail />
         <Contact />
       </div>
       <Footer />
