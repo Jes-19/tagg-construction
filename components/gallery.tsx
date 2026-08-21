@@ -47,18 +47,18 @@ const projects = [
   {
     src: "/images/gallery/pedestrian-walkway.jpeg",
     alt: "Segregated pedestrian walkway on a construction site with mesh fencing and red and white barriers",
-    description: "Segregated Pedestrian Walkway",
+    description: "Proprietary Fence-Lok System with Pull-Out Testing",
     className: "object-cover object-[center_40%]",
   },
   {
     src: "/images/gallery/silt-fencing.png",
-    alt: "Green silt fencing on timber stakes running across a grassy field",
-    description: "Silt Fencing Installation",
+    alt: "Green newt fencing on timber stakes running across a grassy field",
+    description: "Newt Fencing",
   },
   {
     src: "/images/gallery/field-mesh-fencing.png",
-    alt: "Galvanised mesh temporary security fencing running across an open field",
-    description: "Temporary Security Fencing",
+    alt: "Galvanised mesh fencing running across an open field for tree protection",
+    description: "Tree Protection Fencing Installed in Accordance with BS 5837:2012 Figure 2 – Default Specification",
     className: "object-cover object-[center_60%]",
   },
 ]
