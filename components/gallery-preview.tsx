@@ -18,7 +18,7 @@ const previewProjects = [
   {
     src: "/images/gallery/site-hoarding-excavator.png",
     alt: "White site hoarding with green trim along a road",
-    description: "Roadside Site Hoarding Installation",
+    description: "In Ground Hoarding Installation",
   },
   {
     src: "/images/gallery/site-entrance-gates.jpeg",
