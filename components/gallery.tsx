@@ -7,20 +7,15 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    src: "/images/gallery/site-entrance-gates.jpeg",
-    alt: "Construction site entrance with large metal gates and branded hoarding",
-    description: "Site Entrance Gates & Hoarding",
-  },
-  {
     src: "/images/gallery/field-mesh-fencing.png",
     alt: "Galvanised mesh fencing running across an open field for tree protection",
     description: "Tree Protection Fencing Installed in Accordance with BS 5837:2012 Figure 2 – Default Specification",
-    className: "object-cover object-[center_60%]",
+    className: "object-cover object-[left_60%]",
   },
   {
-    src: "/images/gallery/timber-fence.png",
-    alt: "Timber slatted fencing installation on a green hillside",
-    description: "Hit and Miss Compound - Timber Slatted",
+    src: "/images/gallery/site-entrance-gates.jpeg",
+    alt: "Construction site entrance with large metal gates and branded hoarding",
+    description: "Ballasted Entrance Gates & Hoarding",
   },
   {
     src: "/images/gallery/heras-on-posts.png",
@@ -30,7 +25,7 @@ const projects = [
   {
     src: "/images/gallery/site-hoarding-excavator.png",
     alt: "White site hoarding with green trim along a road",
-    description: "Roadside Site Hoarding Installation",
+    description: "In Ground Hoarding Installation",
     className: "object-cover object-[center_75%]",
   },
   {
@@ -42,7 +37,7 @@ const projects = [
   {
     src: "/images/gallery/yellow-hoarding.png",
     alt: "Yellow branded hoarding panels with black trim",
-    description: "Branded Hoarding Installation",
+    description: "COSHH Branded Hoarding Area",
     className: "object-contain bg-muted",
   },
   {

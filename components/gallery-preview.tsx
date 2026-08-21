@@ -5,9 +5,10 @@ import { ArrowRight } from "lucide-react"
 
 const previewProjects = [
   {
-    src: "/images/gallery/timber-fence.png",
-    alt: "Timber slatted fencing installation on a green hillside",
-    description: "Hit and Miss Compound - Timber Slatted",
+    src: "/images/gallery/field-mesh-fencing.png",
+    alt: "Galvanised mesh fencing running across an open field for tree protection",
+    description: "Tree Protection Fencing",
+    className: "object-cover object-[left_60%]",
   },
   {
     src: "/images/gallery/heras-on-posts.png",
@@ -17,12 +18,12 @@ const previewProjects = [
   {
     src: "/images/gallery/site-hoarding-excavator.png",
     alt: "White site hoarding with green trim along a road",
-    description: "Roadside Site Hoarding Installation",
+    description: "In Ground Hoarding Installation",
   },
   {
     src: "/images/gallery/site-entrance-gates.jpeg",
     alt: "Construction site entrance with large metal gates and branded hoarding",
-    description: "Site Entrance Gates & Hoarding",
+    description: "Ballasted Entrance Gates & Hoarding",
   },
 ]
 
@@ -51,7 +52,7 @@ export function GalleryPreview() {
                   src={project.src || "/placeholder.svg"}
                   alt={project.alt}
                   fill
-                  className="object-cover object-bottom group-hover:scale-105 transition-transform duration-500"
+                  className={`${project.className ?? "object-cover object-bottom"} group-hover:scale-105 transition-transform duration-500`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
