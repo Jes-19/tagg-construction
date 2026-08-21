@@ -93,7 +93,7 @@ const services = [
       "Wireless and independently powered CCTV systems",
       "Anti-climb products",
       "Security-rated barriers",
-      "Integrated perimeter security solutions",
+      "Crane Security",
     ],
     color: "#03873c",
     image: {
