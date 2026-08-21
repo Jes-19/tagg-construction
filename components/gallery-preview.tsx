@@ -8,6 +8,7 @@ const previewProjects = [
     src: "/images/gallery/field-mesh-fencing.png",
     alt: "Galvanised mesh fencing running across an open field for tree protection",
     description: "Tree Protection Fencing Installed in Accordance with BS 5837:2012 Figure 2 – Default Specification",
+    className: "object-cover object-[left_60%]",
   },
   {
     src: "/images/gallery/heras-on-posts.png",
@@ -51,7 +52,7 @@ export function GalleryPreview() {
                   src={project.src || "/placeholder.svg"}
                   alt={project.alt}
                   fill
-                  className="object-cover object-bottom group-hover:scale-105 transition-transform duration-500"
+                  className={`${project.className ?? "object-cover object-bottom"} group-hover:scale-105 transition-transform duration-500`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>

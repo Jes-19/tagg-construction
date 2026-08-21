@@ -10,7 +10,7 @@ const projects = [
     src: "/images/gallery/field-mesh-fencing.png",
     alt: "Galvanised mesh fencing running across an open field for tree protection",
     description: "Tree Protection Fencing Installed in Accordance with BS 5837:2012 Figure 2 – Default Specification",
-    className: "object-cover object-[center_60%]",
+    className: "object-cover object-[left_60%]",
   },
   {
     src: "/images/gallery/site-entrance-gates.jpeg",
