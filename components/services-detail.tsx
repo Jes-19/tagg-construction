@@ -101,6 +101,7 @@ const services = [
         src: "/images/gallery/crane-security-fencing.jpeg",
         alt: "Black mesh security fencing installed around a crane base",
         flexBasis: "44%",
+        className: "object-contain bg-muted",
       },
       {
         src: "/images/gallery/mobile-cctv-tower.png",
