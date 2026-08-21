@@ -106,6 +106,7 @@ const services = [
         src: "/images/gallery/mobile-cctv-tower.png",
         alt: "Yellow and red mobile CCTV security tower on a construction site",
         flexBasis: "33%",
+        className: "object-contain bg-muted",
       },
       {
         src: "/images/gallery/concrete-security-barrier.png",
@@ -217,7 +218,7 @@ export function ServicesDetail() {
                         alt={img.alt}
                         fill
                         loading="eager"
-                        className="object-cover"
+                        className={img.className || "object-cover"}
                       />
                     </div>
                   ))}
