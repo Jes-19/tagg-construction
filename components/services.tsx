@@ -23,7 +23,7 @@ const services = [
   {
     icon: Compass,
     title: "Design Services",
-    description: "A full temporary works documentation package supporting safe, compliant installation, including drawings, structural calculations, BS 5975 Category 1 certification, and design risk assessments.",
+    description: "We provide a comprehensive temporary works documentation package to support safe and compliant installation, including typical spacing and detail drawings, structural calculations, BS 5975 Category 1, 2 or 3 design checks and certification, a designer's risk assessment, and a document issue register.",
     color: "#0367c4",
   },
   {
