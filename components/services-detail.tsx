@@ -125,7 +125,7 @@ const services = [
       {
         src: "/images/gallery/yellow-hoarding.png",
         alt: "Yellow branded COSHH hoarding panels with black trim",
-        className: "object-contain bg-muted",
+        className: "object-cover object-center scale-125",
       },
       {
         src: "/images/gallery/woolwich-offices-hoarding.jpeg",
