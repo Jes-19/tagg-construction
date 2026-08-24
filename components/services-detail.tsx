@@ -77,8 +77,8 @@ const services = [
     ],
     color: "#0367c4",
     image: {
-      src: "/images/gallery/hoarding-ballast-banner.jpg",
-      alt: "Timber hoarding secured with a row of concrete ballast blocks along a site boundary",
+      src: "/images/gallery/hoarding-ballast-banner-with-logo.png",
+      alt: "Timber hoarding secured with a row of concrete ballast blocks along a site boundary, with a Temporary Works Forum logo overlay",
       className: "object-cover",
     },
   },
