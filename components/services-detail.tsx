@@ -77,9 +77,9 @@ const services = [
     ],
     color: "#0367c4",
     image: {
-      src: "/images/gallery/pedestrian-walkway.jpeg",
-      alt: "Proprietary Fence-Lok system with pull-out testing on a construction site walkway",
-      className: "object-cover object-[center_40%]",
+      src: "/images/gallery/hoarding-ballast-banner.jpg",
+      alt: "Timber hoarding secured with a row of concrete ballast blocks along a site boundary",
+      className: "object-cover",
     },
   },
   {
@@ -97,8 +97,8 @@ const services = [
     ],
     color: "#03873c",
     image: {
-      src: "/images/gallery/site-security-composite.jpg",
-      alt: "Black mesh security fencing around a crane base, a concrete vehicle security barrier, and a mobile CCTV security tower",
+      src: "/images/gallery/site-security-composite-v2.png",
+      alt: "A concrete vehicle security barrier and a mobile CCTV security tower",
       className: "object-contain bg-muted",
     },
   },
@@ -116,23 +116,11 @@ const services = [
       "Specialist paint finishes",
     ],
     color: "#0367c4",
-    images: [
-      {
-        src: "/images/gallery/signage-tile-1.png",
-        alt: "Yellow branded COSHH hoarding panels with black trim",
-        flexBasis: "26.44%",
-      },
-      {
-        src: "/images/gallery/signage-tile-3.png",
-        alt: "Red, yellow, orange and blue branded hoarding bays housing skips on a construction site",
-        flexBasis: "47.12%",
-      },
-      {
-        src: "/images/gallery/signage-tile-2.png",
-        alt: "Site office hoarding with printed Crossrail branding and graphics",
-        flexBasis: "26.44%",
-      },
-    ],
+    image: {
+      src: "/images/gallery/signage-branding-composite-v2.png",
+      alt: "Yellow branded hoarding, colourful branded skip storage bays, and a Crossrail-branded site office hoarding",
+      className: "object-cover",
+    },
   },
 ]
 
