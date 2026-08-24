@@ -116,23 +116,11 @@ const services = [
       "Specialist paint finishes",
     ],
     color: "#0367c4",
-    images: [
-      {
-        src: "/images/gallery/signage-tile-1.png",
-        alt: "Yellow branded COSHH hoarding panels with black trim",
-        flexBasis: "26.44%",
-      },
-      {
-        src: "/images/gallery/signage-tile-3.png",
-        alt: "Red, yellow, orange and blue branded hoarding bays housing skips on a construction site",
-        flexBasis: "47.12%",
-      },
-      {
-        src: "/images/gallery/signage-tile-2.png",
-        alt: "Site office hoarding with printed Crossrail branding and graphics",
-        flexBasis: "26.44%",
-      },
-    ],
+    image: {
+      src: "/images/gallery/signage-branding-composite-v2.png",
+      alt: "Yellow branded hoarding, colourful branded skip storage bays, and a Crossrail-branded site office hoarding",
+      className: "object-cover",
+    },
   },
 ]
 
