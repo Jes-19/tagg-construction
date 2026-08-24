@@ -77,9 +77,9 @@ const services = [
     ],
     color: "#0367c4",
     image: {
-      src: "/images/gallery/pedestrian-walkway.jpeg",
-      alt: "Proprietary Fence-Lok system with pull-out testing on a construction site walkway",
-      className: "object-cover object-[center_40%]",
+      src: "/images/gallery/hoarding-ballast-blocks.png",
+      alt: "Timber hoarding secured with a row of concrete ballast blocks along a site boundary",
+      className: "object-cover",
     },
   },
   {
