@@ -38,8 +38,9 @@ const services = [
     ],
     color: "#0367c4",
     image: {
-      src: "/images/gallery/heras-on-posts.png",
-      alt: "Heras hoarding panels installed on timber posts along a roadside",
+      src: "/images/gallery/heras-tree-protection-field.png",
+      alt: "A long run of Heras mesh fencing along the edge of a grass field protecting mature trees",
+      className: "object-cover",
     },
   },
   {
