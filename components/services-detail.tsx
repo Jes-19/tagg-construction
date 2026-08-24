@@ -98,8 +98,8 @@ const services = [
     ],
     color: "#03873c",
     image: {
-      src: "/images/gallery/site-security-composite-v3.jpg",
-      alt: "Black mesh security fencing around a crane base, a concrete vehicle security barrier, and a mobile CCTV security tower",
+      src: "/images/gallery/site-security-composite-v4.jpg",
+      alt: "Black mesh security fencing around a crane base, a mobile CCTV security tower, and a concrete vehicle security barrier",
       className: "object-cover",
     },
   },
