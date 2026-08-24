@@ -38,8 +38,9 @@ const services = [
     ],
     color: "#0367c4",
     image: {
-      src: "/images/gallery/heras-on-posts.png",
-      alt: "Heras hoarding panels installed on timber posts along a roadside",
+      src: "/images/gallery/heras-tree-protection-field.png",
+      alt: "A long run of Heras mesh fencing along the edge of a grass field protecting mature trees",
+      className: "object-cover",
     },
   },
   {
@@ -97,9 +98,9 @@ const services = [
     ],
     color: "#03873c",
     image: {
-      src: "/images/gallery/site-security-composite-v2.png",
-      alt: "A concrete vehicle security barrier and a mobile CCTV security tower",
-      className: "object-contain bg-muted",
+      src: "/images/gallery/site-security-composite-v4.jpg",
+      alt: "Black mesh security fencing around a crane base, a mobile CCTV security tower, and a concrete vehicle security barrier",
+      className: "object-cover",
     },
   },
   {
