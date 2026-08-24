@@ -79,7 +79,7 @@ const services = [
     image: {
       src: "/images/gallery/hoarding-ballast-blocks.png",
       alt: "Timber hoarding secured with a row of concrete ballast blocks along a site boundary",
-      className: "object-cover",
+      className: "object-contain bg-muted",
     },
   },
   {
