@@ -177,7 +177,7 @@ export function ServicesDetail() {
             <div
               key={service.title}
               id={service.slug}
-              className="rounded-2xl border border-border bg-card overflow-hidden scroll-mt-24"
+              className="rounded-2xl border border-border bg-card overflow-hidden scroll-mt-28 md:scroll-mt-40"
             >
               {service.image && (
                 <div className="relative h-56 md:h-64 w-full">
