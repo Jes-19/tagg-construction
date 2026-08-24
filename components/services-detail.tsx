@@ -6,6 +6,7 @@ import Link from "next/link"
 
 const services = [
   {
+    slug: "hoarding-systems",
     icon: Building2,
     title: "Hoarding Systems",
     description:
@@ -24,6 +25,7 @@ const services = [
     },
   },
   {
+    slug: "heras-tree-protection",
     icon: Fence,
     title: "Heras Fencing & Tree Protection",
     description:
@@ -44,6 +46,7 @@ const services = [
     },
   },
   {
+    slug: "site-access",
     icon: DoorOpen,
     title: "Site Access Options",
     description:
@@ -63,6 +66,7 @@ const services = [
     },
   },
   {
+    slug: "design-services",
     icon: Compass,
     title: "Temporary Works Design Services",
     description:
@@ -84,6 +88,7 @@ const services = [
     },
   },
   {
+    slug: "site-security",
     icon: ShieldCheck,
     title: "Site Security",
     description:
@@ -104,6 +109,7 @@ const services = [
     },
   },
   {
+    slug: "signage-branding",
     icon: PaintBucket,
     title: "Signage, Branding & Decoration",
     description:
@@ -168,7 +174,11 @@ export function ServicesDetail() {
 
         <div className="space-y-8 max-w-5xl mx-auto">
           {services.map((service) => (
-            <div key={service.title} className="rounded-2xl border border-border bg-card overflow-hidden">
+            <div
+              key={service.title}
+              id={service.slug}
+              className="rounded-2xl border border-border bg-card overflow-hidden scroll-mt-28 md:scroll-mt-40"
+            >
               {service.image && (
                 <div className="relative h-56 md:h-64 w-full">
                   <Image
