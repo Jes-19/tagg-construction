@@ -24,6 +24,11 @@ const faqs = [
       "Thanks to our large stock holding and experienced installation teams, we work closely with our clients to deliver important projects within short timeframes. Where required, we can mobilise quickly to meet programme demands and site constraints.",
   },
   {
+    question: "Do I need a temporary works design for hoarding?",
+    answer:
+      "In most cases, yes — hoarding is classed as temporary works under BS 5975, and a design is required wherever there's risk to public safety, nearby structures, or the site itself. The level of design depends on complexity, ranging from a simple Category 0/1 check to a full independent Category 2 or 3 design. If you're unsure what your project needs, our in-house Temporary Works Coordinator can advise.",
+  },
+  {
     question: "Do you provide TW details?",
     answer:
       "Yes. As standard, we provide a comprehensive temporary works documentation package to support safe, compliant installation. This includes typical spacing and detail drawings, a full structural calculation pack, BS 5975 Category 1 checks and certification, a designer's risk assessment, and a document issue register. Where required, our engineers can also produce Category 2 and Category 3 independent checks.",
