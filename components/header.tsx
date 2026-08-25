@@ -31,7 +31,7 @@ export function Header() {
     const scrollToSection = () => {
       const el = document.getElementById(hash)
       if (!el) return
-      const headerOffset = window.innerWidth >= 768 ? 208 : 168
+      const headerOffset = window.innerWidth >= 768 ? 156 : 126
       const top = el.getBoundingClientRect().top + window.scrollY - headerOffset
       window.scrollTo({ top, behavior: 'smooth' })
     }
@@ -73,14 +73,14 @@ export function Header() {
       </div>
       
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-40">
+        <div className="flex items-center justify-between h-[120px]">
           <Link href="/" className="flex items-center">
             <Image 
               src="/images/tagg-logo.png" 
               alt="Tagg Construction Fencing" 
               width={780} 
               height={520} 
-              className="h-36 w-auto"
+              className="h-[108px] w-auto"
               priority
             />
           </Link>
