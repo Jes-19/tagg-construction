@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Check, TreePine, Leaf, ArrowRight, MapPin, Building2 } from "lucide-react"
+import { Check, TreePine, Leaf, ArrowRight, MapPin, Building2, Fence } from "lucide-react"
 import Link from "next/link"
 
 const caseStudies = [
@@ -26,6 +26,31 @@ const caseStudies = [
       "Full decoration and rebranding in the client's updated marketing colours",
       "Phased alterations and removal coordinated with the client's construction programme",
     ],
+  },
+  {
+    stat: "6,600+",
+    statUnit: "Linear Metres",
+    icon: Fence,
+    title: "Heras Fencing on Posts",
+    client: "National PLC Housebuilder | Stevenage",
+    color: "#0367c4",
+    image: {
+      src: "/images/gallery/heras-fencing-posts-stevenage.png",
+      alt: "Curving post-supported Heras mesh fencing with blue pedestrian barriers alongside an active construction site under a clear blue sky",
+    },
+    summary:
+      "Tagg Construction designed and installed over 6,600 linear metres of post-supported Heras fencing, creating a robust and clearly defined boundary across a 1,200-unit joint venture development.",
+    itemsHeading: "The works included",
+    points: [
+      "Design of a robust and cost-effective fencing solution",
+      "Preparation of a complete temporary works documentation package, including detailed drawings, structural calculations, a BS 5975 Category 1 design check, designer's risk assessment and document issue register",
+      "Supply of over 1,800 Heras panels, associated materials and installation labour",
+      "Installation of the post-supported fencing system and Monarflex sheeting",
+      "Phased installation coordinated with both clients and the joint venture management team",
+      "Alterations and extensions to accommodate the evolving site layout and construction programme",
+    ],
+    footnote:
+      "The completed system provided a secure, durable and consistently aligned boundary suitable for the development's long-term construction requirements.",
   },
   {
     stat: "2,068",
