@@ -28,20 +28,36 @@ export function Header() {
 
     const hash = href.substring(hashIndex + 1)
 
+    const scrollToSection = () => {
+      const el = document.getElementById(hash)
+      if (!el) return
+      const headerOffset = window.innerWidth >= 768 ? 136 : 96
+      const top = el.getBoundingClientRect().top + window.scrollY - headerOffset
+      window.scrollTo({ top, behavior: 'smooth' })
+    }
+
+    // Retries until the target section has mounted, since navigating from
+    // another page means the homepage content isn't in the DOM yet.
+    const waitForSectionThenScroll = (attempts = 0) => {
+      const el = document.getElementById(hash)
+      if (el) {
+        scrollToSection()
+      } else if (attempts < 40) {
+        setTimeout(() => waitForSectionThenScroll(attempts + 1), 50)
+      }
+    }
+
     if (pathname === '/') {
       // Already on homepage, just scroll
       e.preventDefault()
-      const el = document.getElementById(hash)
-      if (el) el.scrollIntoView({ behavior: 'smooth' })
+      scrollToSection()
     } else {
-      // On another page, navigate to homepage then scroll
+      // On another page, navigate to homepage then scroll once it mounts.
+      // scroll: false stops Next.js from resetting scroll to top after the
+      // route change, which would otherwise override our manual scroll.
       e.preventDefault()
-      router.push('/')
-      // Wait for navigation, then scroll
-      setTimeout(() => {
-        const el = document.getElementById(hash)
-        if (el) el.scrollIntoView({ behavior: 'smooth' })
-      }, 500)
+      router.push('/', { scroll: false })
+      waitForSectionThenScroll()
     }
   }, [pathname, router])
 

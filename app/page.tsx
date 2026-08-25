@@ -10,6 +10,7 @@ import { Services } from "@/components/services"
 import { About } from "@/components/about"
 import { Accreditations } from "@/components/accreditations"
 import { GalleryPreview } from "@/components/gallery-preview"
+import { OperatingArea } from "@/components/operating-area"
 import { Contact } from "@/components/contact"
 import { FAQ } from "@/components/faq"
 import { Footer } from "@/components/footer"
@@ -23,6 +24,7 @@ export default function Home() {
       <Accreditations />
       <About />
       <GalleryPreview />
+      <OperatingArea />
       <Contact />
       <FAQ />
       <Footer />

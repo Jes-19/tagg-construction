@@ -24,6 +24,11 @@ const faqs = [
       "Thanks to our large stock holding and experienced installation teams, we work closely with our clients to deliver important projects within short timeframes. Where required, we can mobilise quickly to meet programme demands and site constraints.",
   },
   {
+    question: "Do I need a temporary works design for hoarding?",
+    answer:
+      "In most cases, yes — hoarding is classed as temporary works under BS 5975, and a design is required wherever there's risk to public safety, nearby structures, or the site itself. The level of design depends on complexity, ranging from a simple Category 0/1 check to a full independent Category 2 or 3 design. If you're unsure what your project needs, our in-house Temporary Works Coordinator can advise.",
+  },
+  {
     question: "Do you provide TW details?",
     answer:
       "Yes. As standard, we provide a comprehensive temporary works documentation package to support safe, compliant installation. This includes typical spacing and detail drawings, a full structural calculation pack, BS 5975 Category 1 checks and certification, a designer's risk assessment, and a document issue register. Where required, our engineers can also produce Category 2 and Category 3 independent checks.",
@@ -32,6 +37,16 @@ const faqs = [
     question: "What gate options do you supply?",
     answer:
       "We fabricate and supply a full range of access solutions to suit varying site layouts, security requirements, and traffic flows. Options include pedestrian access gates, vehicle access gates, bi-fold gates, and custom gate solutions designed to suit specific access and security requirements. All gate options can be integrated seamlessly into our fencing and hoarding systems.",
+  },
+  {
+    question: "What areas do you cover?",
+    answer:
+      "We're based in Surrey and cover London, the South East, and surrounding counties. See our coverage map above for the full extent of our operating area — if your site falls outside it or you're unsure, just get in touch and we'll confirm.",
+  },
+  {
+    question: "Do you remove hoarding at the end of the project?",
+    answer:
+      "Yes. Once your project is complete, we can dismantle and remove the hoarding, fencing and associated materials, leaving the working area clean and tidy. Removals can be completed in phases and coordinated with your construction programme.",
   },
 ]
 
