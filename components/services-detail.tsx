@@ -19,8 +19,8 @@ const services = [
     ],
     color: "#03873c",
     image: {
-      src: "/images/gallery/hoarding-systems-composite.png",
-      alt: "Three hoarding installations: red hoarding along a footpath, black steel support posts along a roadside, and white hoarding with green trim beside an excavator",
+      src: "/images/gallery/hoarding-systems-composite-v2.png",
+      alt: "Three hoarding installations: red hoarding along a footpath, black steel support posts along a roadside, and white hoarding beside an excavator",
       className: "object-cover",
     },
   },
