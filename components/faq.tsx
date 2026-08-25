@@ -38,6 +38,16 @@ const faqs = [
     answer:
       "We fabricate and supply a full range of access solutions to suit varying site layouts, security requirements, and traffic flows. Options include pedestrian access gates, vehicle access gates, bi-fold gates, and custom gate solutions designed to suit specific access and security requirements. All gate options can be integrated seamlessly into our fencing and hoarding systems.",
   },
+  {
+    question: "What areas do you cover?",
+    answer:
+      "We're based in Surrey and cover London, the South East, and surrounding counties. See our coverage map above for the full extent of our operating area — if your site falls outside it or you're unsure, just get in touch and we'll confirm.",
+  },
+  {
+    question: "Do you remove hoarding at the end of the project?",
+    answer:
+      "Yes. Once your project is complete, we can dismantle and remove the hoarding, fencing and associated materials, leaving the working area clean and tidy. Removals can be completed in phases and coordinated with your construction programme.",
+  },
 ]
 
 export function FAQ() {
