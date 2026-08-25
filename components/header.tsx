@@ -28,20 +28,24 @@ export function Header() {
 
     const hash = href.substring(hashIndex + 1)
 
+    const scrollToSection = () => {
+      const el = document.getElementById(hash)
+      if (!el) return
+      const headerOffset = window.innerWidth >= 768 ? 136 : 96
+      const top = el.getBoundingClientRect().top + window.scrollY - headerOffset
+      window.scrollTo({ top, behavior: 'smooth' })
+    }
+
     if (pathname === '/') {
       // Already on homepage, just scroll
       e.preventDefault()
-      const el = document.getElementById(hash)
-      if (el) el.scrollIntoView({ behavior: 'smooth' })
+      scrollToSection()
     } else {
       // On another page, navigate to homepage then scroll
       e.preventDefault()
       router.push('/')
       // Wait for navigation, then scroll
-      setTimeout(() => {
-        const el = document.getElementById(hash)
-        if (el) el.scrollIntoView({ behavior: 'smooth' })
-      }, 500)
+      setTimeout(scrollToSection, 500)
     }
   }, [pathname, router])
 
