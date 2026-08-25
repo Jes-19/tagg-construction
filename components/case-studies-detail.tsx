@@ -32,7 +32,7 @@ const caseStudies = [
     statUnit: "Linear Metres",
     icon: Fence,
     title: "Heras Fencing on Posts",
-    client: "National PLC Housebuilder | Stevenage",
+    client: "National PLC Housebuilder - Stevenage",
     color: "#0367c4",
     image: {
       src: "/images/gallery/heras-fencing-posts-stevenage.png",
