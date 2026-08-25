@@ -26,7 +26,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-4">
               <div className="w-10 h-10 bg-[#03873c] rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">32</span>
+                <span className="text-primary-foreground font-bold text-sm">32+</span>
               </div>
               <span className="text-background/70">Established for 32 Years</span>
             </div>
