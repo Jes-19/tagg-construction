@@ -42,7 +42,7 @@ export function Hero() {
             <div className="flex items-center gap-6 pt-8 border-t border-border">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-[#03873c]/10 rounded-lg flex items-center justify-center">
-                  <span className="text-xl font-bold text-[#03873c]">29+</span>
+                  <span className="text-xl font-bold text-[#03873c]">32+</span>
                 </div>
                 <div>
                   <div className="font-semibold text-foreground">Years</div>

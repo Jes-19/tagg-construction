@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 
 const previewProjects = [
   {
@@ -63,12 +62,12 @@ export function GalleryPreview() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
           <Button asChild size="lg" className="bg-[#03873c] hover:bg-[#026b30] text-white">
-            <Link href="/gallery">
-              See Project Gallery
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+            <Link href="/gallery">See Project Gallery</Link>
+          </Button>
+          <Button asChild size="lg" className="bg-[#03873c] hover:bg-[#026b30] text-white">
+            <Link href="/case-studies">View Case Studies</Link>
           </Button>
         </div>
       </div>
