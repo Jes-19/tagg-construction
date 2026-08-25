@@ -1,8 +1,9 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { useState, useCallback } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const projects = [
@@ -148,6 +149,27 @@ export function Gallery() {
                 aria-label={`Go to project ${index + 1}`}
               />
             ))}
+          </div>
+        </div>
+
+        <div className="max-w-3xl mx-auto mt-16 text-center rounded-2xl bg-muted/50 border border-border p-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3 text-balance">
+            Like What You See?
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Get in touch to discuss your fencing or hoarding requirements, or explore detailed case studies of our
+            large-scale project deliveries.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Button asChild size="lg">
+              <Link href="/#contact">
+                Contact Us
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <Link href="/case-studies">View Case Studies</Link>
+            </Button>
           </div>
         </div>
       </div>
