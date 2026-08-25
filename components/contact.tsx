@@ -314,7 +314,7 @@ export function Contact({ hideMaps = false }: { hideMaps?: boolean }) {
                 <CardContent className="p-6">
                   <h4 className="font-bold text-lg text-foreground mb-3">Why Choose Tagg?</h4>
                   <ul className="space-y-2 text-muted-foreground text-sm">
-                    <li>Established for 32 years</li>
+                    <li>Established for over 32 years</li>
                     <li>CHAS and SMAS accredited</li>
                     <li>Qualified project managers</li>
                     <li>Sustainable timber sourcing</li>

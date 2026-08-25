@@ -205,6 +205,12 @@ export function ServicesDetail() {
             >
               CQMS
             </Badge>
+            <Badge
+              variant="outline"
+              className="px-4 py-1.5 text-sm font-medium border-[#0367c4]/30 bg-[#0367c4]/10 text-[#0367c4]"
+            >
+              FORS Silver
+            </Badge>
           </div>
         </div>
 

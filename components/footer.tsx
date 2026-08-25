@@ -10,13 +10,13 @@ export function Footer() {
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center mb-6">
+            <Link href="/" className="inline-flex items-center mb-6 bg-background rounded-lg px-4 py-3">
               <Image 
                 src="/images/tagg-logo.png" 
                 alt="Tagg Construction Fencing" 
-                width={300} 
-                height={90} 
-                className="h-20 w-auto brightness-0 invert"
+                width={1612} 
+                height={632} 
+                className="h-[79px] w-auto"
               />
             </Link>
             <p className="text-background/70 max-w-md leading-relaxed mb-6">
@@ -26,9 +26,9 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-4">
               <div className="w-10 h-10 bg-[#03873c] rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">32</span>
+                <span className="text-primary-foreground font-bold text-sm">32+</span>
               </div>
-              <span className="text-background/70">Established for 32 Years</span>
+              <span className="text-background/70">Established for Over 32 Years</span>
             </div>
           </div>
           
