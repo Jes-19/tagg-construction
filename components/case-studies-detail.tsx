@@ -10,11 +10,11 @@ const caseStudies = [
     statUnit: "Linear Metres",
     icon: Building2,
     title: "Timber Hoarding",
-    client: "BHET",
+    client: "Berkeley Homes East Thames - London",
     color: "#03873c",
     image: {
-      src: "/images/gallery/hoarding-ballast-blocks.png",
-      alt: "Rows of proprietary concrete kentledge blocks used to support freestanding timber hoarding on site",
+      src: "/images/gallery/berkeley-homes-hoarding-kentledge.png",
+      alt: "Curving freestanding timber hoarding braced with concrete kentledge blocks alongside an excavation on a London construction site",
     },
     summary:
       "Tagg Construction delivered a large-scale, freestanding timber hoarding package supported by more than 800 tonnes of proprietary kentledge blocks.",
