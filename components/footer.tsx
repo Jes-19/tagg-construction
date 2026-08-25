@@ -16,7 +16,7 @@ export function Footer() {
                 alt="Tagg Construction Fencing" 
                 width={1612} 
                 height={632} 
-                className="h-16 w-auto"
+                className="h-[79px] w-auto"
               />
             </Link>
             <p className="text-background/70 max-w-md leading-relaxed mb-6">
