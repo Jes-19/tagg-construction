@@ -188,12 +188,17 @@ export function CaseStudiesDetail() {
             Planning a temporary fencing, hoarding or environmental protection package? Contact our team to discuss
             your requirements and arrange a site survey.
           </p>
-          <Button asChild size="lg">
-            <Link href="/#contact">
-              Get in Touch
-              <ArrowRight className="h-4 w-4 ml-2" />
-            </Link>
-          </Button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Button asChild size="lg">
+              <Link href="/#contact">
+                Get in Touch
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <Link href="/gallery">See Project Gallery</Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
