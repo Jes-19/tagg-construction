@@ -71,7 +71,7 @@ export function Contact({ hideMaps = false }: { hideMaps?: boolean }) {
         <div className="max-w-6xl mx-auto mb-12">
           <div className="grid lg:grid-cols-2 rounded-2xl overflow-hidden shadow-lg">
             <div className="bg-[#1e293b] text-white p-10 lg:p-12 flex flex-col justify-center">
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">Contact Us - Office</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-2">Head Office</h3>
               <div className="w-12 h-1 bg-[#03873c] mb-8" />
               
               <p className="text-lg font-semibold mb-6">Tagg Construction Ltd</p>
