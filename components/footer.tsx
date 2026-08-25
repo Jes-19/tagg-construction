@@ -14,8 +14,8 @@ export function Footer() {
               <Image 
                 src="/images/tagg-logo.png" 
                 alt="Tagg Construction Fencing" 
-                width={300} 
-                height={90} 
+                width={1612} 
+                height={632} 
                 className="h-20 w-auto brightness-0 invert"
               />
             </Link>

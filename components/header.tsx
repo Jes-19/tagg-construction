@@ -78,8 +78,8 @@ export function Header() {
             <Image 
               src="/images/tagg-logo.png" 
               alt="Tagg Construction Fencing" 
-              width={1538} 
-              height={588} 
+              width={1612} 
+              height={632} 
               className="h-[90px] w-auto"
               priority
             />
