@@ -32,7 +32,7 @@ const caseStudies = [
     statUnit: "Linear Metres",
     icon: TreePine,
     title: "Tree Protection Fencing",
-    client: "National PLC Housebuilder",
+    client: "National PLC Housebuilder - Oxfordshire",
     color: "#03873c",
     image: {
       src: "/images/gallery/heras-tree-protection-field.png",
@@ -51,7 +51,7 @@ const caseStudies = [
     statUnit: "Linear Metres",
     icon: Leaf,
     title: "Newt Fencing",
-    client: "National PLC Housebuilder",
+    client: "National PLC Housebuilder - Berkshire",
     color: "#0367c4",
     image: {
       src: "/images/gallery/silt-newt-fencing.png",
