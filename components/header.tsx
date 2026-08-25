@@ -18,6 +18,7 @@ export function Header() {
     { href: "/#about", label: "About" },
     { href: "/#accreditations", label: "Accreditations" },
     { href: "/gallery", label: "Gallery" },
+    { href: "/case-studies", label: "Case Studies" },
     { href: "/#contact", label: "Contact" },
   ]
 
