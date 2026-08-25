@@ -31,7 +31,7 @@ export function Header() {
     const scrollToSection = () => {
       const el = document.getElementById(hash)
       if (!el) return
-      const headerOffset = window.innerWidth >= 768 ? 185 : 129
+      const headerOffset = window.innerWidth >= 768 ? 148 : 103
       const top = el.getBoundingClientRect().top + window.scrollY - headerOffset
       window.scrollTo({ top, behavior: 'smooth' })
     }
@@ -63,8 +63,8 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="bg-primary text-primary-foreground py-2 hidden md:block">
-        <div className="container mx-auto px-4 flex justify-end gap-6 text-sm">
+      <div className="bg-primary text-primary-foreground py-1.5 hidden md:block">
+        <div className="container mx-auto px-4 flex justify-end gap-5 text-sm">
           <a href="mailto:info@taggconstruction.co.uk" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Mail className="h-4 w-4" />
             <span>info@taggconstruction.co.uk</span>
@@ -73,19 +73,19 @@ export function Header() {
       </div>
       
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-[136px]">
+        <div className="flex items-center justify-between h-[109px]">
           <Link href="/" className="flex items-center">
             <Image 
               src="/images/tagg-logo.png" 
               alt="Tagg Construction Fencing" 
-              width={887} 
-              height={444} 
-              className="h-[112px] w-auto"
+              width={1538} 
+              height={588} 
+              className="h-[90px] w-auto"
               priority
             />
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -98,7 +98,7 @@ export function Header() {
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3">
             <Button asChild>
               <a href="/#contact" onClick={(e) => handleNavClick(e, '/#contact')}>Get a Quote</a>
             </Button>
