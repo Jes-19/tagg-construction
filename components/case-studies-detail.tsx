@@ -1,10 +1,32 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Check, TreePine, Leaf, ArrowRight, MapPin } from "lucide-react"
+import { Check, TreePine, Leaf, ArrowRight, MapPin, Building2 } from "lucide-react"
 import Link from "next/link"
 
 const caseStudies = [
+  {
+    stat: "1,803",
+    statUnit: "Linear Metres",
+    icon: Building2,
+    title: "Timber Hoarding",
+    client: "BHET",
+    color: "#03873c",
+    image: {
+      src: "/images/gallery/hoarding-ballast-blocks.png",
+      alt: "Rows of proprietary concrete kentledge blocks used to support freestanding timber hoarding on site",
+    },
+    summary:
+      "Tagg Construction delivered a large-scale, freestanding timber hoarding package supported by more than 800 tonnes of proprietary kentledge blocks.",
+    itemsHeading: "The works included",
+    points: [
+      "Manufacture, delivery and installation of over 800 tonnes of proprietary kentledge blocks",
+      "Installation of 1,803 linear metres of timber hoarding",
+      "Fabrication and installation of eight bespoke access gates, with openings of up to 10 metres",
+      "Full decoration and rebranding in the client's updated marketing colours",
+      "Phased alterations and removal coordinated with the client's construction programme",
+    ],
+  },
   {
     stat: "2,068",
     statUnit: "Linear Metres",
