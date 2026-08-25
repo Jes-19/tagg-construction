@@ -134,7 +134,7 @@ const services = [
     icon: LandPlot,
     title: "Temporary Fencing & Compound Solutions",
     description:
-      "We provide a range of site and compound fencing solutions to clearly demarcate work areas, protect people and assets, and control site activities—creating a safe and secure environment throughout your build.",
+      "We provide a range of site and compound fencing solutions to clearly demarcate work areas, protect people and assets, and control site activities. This creates a safe and secure environment throughout your build.",
     items: [
       "Pedestrian Safety Fencing",
       "Newt Fencing",
