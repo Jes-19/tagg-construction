@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Check, Building2, Fence, DoorOpen, Compass, ShieldCheck, PaintBucket, ArrowRight } from "lucide-react"
+import { Check, Building2, Fence, DoorOpen, Compass, ShieldCheck, PaintBucket, ArrowRight, LandPlot } from "lucide-react"
 import Link from "next/link"
 
 const services = [
@@ -19,8 +19,8 @@ const services = [
     ],
     color: "#03873c",
     image: {
-      src: "/images/gallery/hoarding-systems-composite.png",
-      alt: "Three hoarding installations: red hoarding along a footpath, black steel support posts along a roadside, and white hoarding with green trim beside an excavator",
+      src: "/images/gallery/hoarding-systems-composite-v2.png",
+      alt: "Three hoarding installations: red hoarding along a footpath, black steel support posts along a roadside, and white hoarding beside an excavator",
       className: "object-cover",
     },
   },
@@ -128,6 +128,42 @@ const services = [
       alt: "Yellow branded hoarding, colourful branded skip storage bays, and a Crossrail-branded site office hoarding",
       className: "object-cover",
     },
+  },
+  {
+    slug: "temporary-fencing-compound",
+    icon: LandPlot,
+    title: "Temporary Fencing & Compound Solutions",
+    description:
+      "We provide a range of site and compound fencing solutions to clearly demarcate work areas, protect people and assets, and control site activities. This creates a safe and secure environment throughout your build.",
+    items: [
+      "Pedestrian Safety Fencing",
+      "Newt Fencing",
+      "Silt Fencing",
+      "Knee Rail",
+      "Smoking Shelters",
+      "Hit and Miss Fencing",
+    ],
+    color: "#03873c",
+    images: [
+      {
+        src: "/images/gallery/silt-newt-fencing.png",
+        alt: "Green silt and newt exclusion fencing on timber posts running along a grass field boundary in front of trees",
+        className: "object-cover",
+        flexBasis: "38%",
+      },
+      {
+        src: "/images/gallery/hit-and-miss-fencing.png",
+        alt: "Timber hit and miss fence panel forming a boundary on grass with trees and blue sky behind",
+        className: "object-cover",
+        flexBasis: "34%",
+      },
+      {
+        src: "/images/gallery/knee-rail-safety-railing.png",
+        alt: "Red and white timber knee rail alongside a covered walkway between site cabins",
+        className: "object-cover",
+        flexBasis: "28%",
+      },
+    ],
   },
 ]
 
