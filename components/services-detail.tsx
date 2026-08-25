@@ -146,16 +146,16 @@ const services = [
     color: "#03873c",
     images: [
       {
-        src: "/images/gallery/hit-and-miss-fencing.png",
-        alt: "Timber hit and miss fence panel forming a boundary on grass with trees and blue sky behind",
-        className: "object-cover",
-        flexBasis: "34%",
-      },
-      {
         src: "/images/gallery/silt-newt-fencing.png",
         alt: "Green silt and newt exclusion fencing on timber posts running along a grass field boundary in front of trees",
         className: "object-cover",
         flexBasis: "38%",
+      },
+      {
+        src: "/images/gallery/hit-and-miss-fencing.png",
+        alt: "Timber hit and miss fence panel forming a boundary on grass with trees and blue sky behind",
+        className: "object-cover",
+        flexBasis: "34%",
       },
       {
         src: "/images/gallery/knee-rail-safety-railing.png",
