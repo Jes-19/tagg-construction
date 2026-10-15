@@ -8,14 +8,14 @@ const services = [
     title: "Hoarding Systems",
     description: "Professional hoarding solutions providing secure site boundaries, visual screening, and a clean, presentable appearance. Systems can be tailored to suit site constraints, finishes, and branding requirements.",
     color: "#03873c",
-    href: "/services#hoarding-systems",
+    href: "/services/hoarding-systems",
   },
   {
     icon: Fence,
     title: "Heras & Tree Protection",
     description: "Cost-effective perimeter control systems used to prevent unauthorised access and to form compliant exclusion or tree protection zones across construction sites.",
     color: "#0367c4",
-    href: "/services#heras-tree-protection",
+    href: "/services/tree-protection",
   },
   {
     icon: DoorOpen,
