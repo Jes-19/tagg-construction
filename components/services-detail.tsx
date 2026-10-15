@@ -284,6 +284,17 @@ export function ServicesDetail() {
                         </li>
                       ))}
                     </ul>
+
+                    {(service.slug === "hoarding-systems" || service.slug === "heras-tree-protection") && (
+                      <Button asChild variant="outline" className="mt-8">
+                        <Link href={`/services/${service.slug === "heras-tree-protection" ? "tree-protection" : service.slug}`}>
+                          {service.slug === "heras-tree-protection"
+                            ? "Explore Tree Protection Services"
+                            : "Explore Hoarding Systems Services"}
+                          <ArrowRight data-icon="inline-end" />
+                        </Link>
+                      </Button>
+                    )}
                   </div>
                 </div>
               </div>

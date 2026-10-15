@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
-import { Fence, Building2, DoorOpen, Compass, PaintBucket, ShieldCheck } from "lucide-react"
+import { Fence, Building2, DoorOpen, Compass, PaintBucket, ShieldCheck, ArrowRight } from "lucide-react"
 
 const services = [
   {
@@ -74,6 +74,14 @@ export function Services() {
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                  {(service.title === "Hoarding Systems" || service.title === "Heras & Tree Protection") && (
+                    <span className="inline-flex items-center gap-2 mt-6 text-sm font-semibold text-primary group-hover:underline">
+                      {service.title === "Hoarding Systems"
+                        ? "Explore Hoarding Systems Services"
+                        : "Explore Tree Protection Services"}
+                      <ArrowRight className="size-4" aria-hidden="true" />
+                    </span>
+                  )}
                 </CardContent>
               </Card>
             </Link>
