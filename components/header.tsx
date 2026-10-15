@@ -4,11 +4,12 @@ import { useState, useCallback } from "react"
 import { useRouter, usePathname } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X, Mail } from "lucide-react"
+import { Menu, X, Mail, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isServicesMenuOpen, setIsServicesMenuOpen] = useState(false)
   const router = useRouter()
   const pathname = usePathname()
 
@@ -86,16 +87,46 @@ export function Header() {
           </Link>
 
           <nav className="hidden lg:flex items-center gap-6">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={(e) => handleNavClick(e, link.href)}
-                className="text-foreground/80 hover:text-primary font-medium transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.label === "Services" ? (
+                <div
+                  key={link.href}
+                  className="relative"
+                  onMouseEnter={() => setIsServicesMenuOpen(true)}
+                  onMouseLeave={() => setIsServicesMenuOpen(false)}
+                >
+                  <a
+                    href={link.href}
+                    onClick={(e) => handleNavClick(e, link.href)}
+                    className="inline-flex items-center gap-1 text-foreground/80 hover:text-primary font-medium transition-colors py-4"
+                    aria-haspopup="true"
+                  >
+                    Services
+                    <ChevronDown className={`size-4 transition-transform ${isServicesMenuOpen ? "rotate-180" : ""}`} aria-hidden="true" />
+                  </a>
+                  <div className={`absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 rounded-lg border border-border bg-background p-2 shadow-lg transition-all duration-200 ${isServicesMenuOpen ? "visible translate-y-0 opacity-100" : "invisible translate-y-2 opacity-0"}`}>
+                    <Link href="/services" className="block rounded-md px-4 py-3 text-sm font-medium text-foreground/80 hover:bg-muted hover:text-primary">
+                      All Services
+                    </Link>
+                    <Link href="/services/hoarding-systems" className="block rounded-md px-4 py-3 text-sm font-medium text-foreground/80 hover:bg-muted hover:text-primary">
+                      Hoarding Systems
+                    </Link>
+                    <Link href="/services/tree-protection" className="block rounded-md px-4 py-3 text-sm font-medium text-foreground/80 hover:bg-muted hover:text-primary">
+                      Tree Protection
+                    </Link>
+                  </div>
+                </div>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={(e) => handleNavClick(e, link.href)}
+                  className="text-foreground/80 hover:text-primary font-medium transition-colors"
+                >
+                  {link.label}
+                </a>
+              ),
+            )}
           </nav>
 
           <div className="hidden lg:flex items-center gap-3">
@@ -117,16 +148,39 @@ export function Header() {
       {isMenuOpen && (
         <div className="lg:hidden bg-background border-t border-border">
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-foreground/80 hover:text-primary font-medium py-2 transition-colors"
-                onClick={(e) => { setIsMenuOpen(false); handleNavClick(e, link.href); }}
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.label === "Services" ? (
+                <div key={link.href} className="flex flex-col gap-1">
+                  <a
+                    href={link.href}
+                    className="text-foreground/80 hover:text-primary font-medium py-2 transition-colors"
+                    onClick={(e) => { setIsMenuOpen(false); handleNavClick(e, link.href); }}
+                  >
+                    Services
+                  </a>
+                  <div className="ml-4 flex flex-col gap-1 border-l border-border pl-4">
+                    <Link href="/services" className="py-2 text-sm text-muted-foreground hover:text-primary" onClick={() => setIsMenuOpen(false)}>
+                      All Services
+                    </Link>
+                    <Link href="/services/hoarding-systems" className="py-2 text-sm text-muted-foreground hover:text-primary" onClick={() => setIsMenuOpen(false)}>
+                      Hoarding Systems
+                    </Link>
+                    <Link href="/services/tree-protection" className="py-2 text-sm text-muted-foreground hover:text-primary" onClick={() => setIsMenuOpen(false)}>
+                      Tree Protection
+                    </Link>
+                  </div>
+                </div>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-foreground/80 hover:text-primary font-medium py-2 transition-colors"
+                  onClick={(e) => { setIsMenuOpen(false); handleNavClick(e, link.href); }}
+                >
+                  {link.label}
+                </a>
+              ),
+            )}
             <Button asChild className="mt-2">
               <a href="/#contact" onClick={(e) => { setIsMenuOpen(false); handleNavClick(e, '/#contact'); }}>Get a Quote</a>
             </Button>
