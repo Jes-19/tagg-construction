@@ -10,9 +10,18 @@ interface ServiceLandingPageProps {
   image: { src: string; alt: string }
   items: string[]
   intro: string
+  exploreLabel: string
 }
 
-export function ServiceLandingPage({ eyebrow, title, description, image, items, intro }: ServiceLandingPageProps) {
+export function ServiceLandingPage({
+  eyebrow,
+  title,
+  description,
+  image,
+  items,
+  intro,
+  exploreLabel,
+}: ServiceLandingPageProps) {
   return (
     <main className="min-h-screen bg-background">
       <section className="bg-muted/50 pt-24 pb-16 md:pt-32 md:pb-20">
@@ -32,7 +41,10 @@ export function ServiceLandingPage({ eyebrow, title, description, image, items, 
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link href="/services">View all services</Link>
+                  <Link href="/services">
+                    {exploreLabel}
+                    <ArrowRight data-icon="inline-end" />
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -96,6 +108,7 @@ export const hoardingSystemsPage = {
   },
   intro:
     "From early planning through to installation, alterations and removal, we provide a complete hoarding service. Our team can help select a system that delivers secure boundaries, public protection and a professional finish.",
+  exploreLabel: "Explore Hoarding Systems Services",
   items: [
     "In-ground timber hoarding",
     "Concrete block-ballasted systems",
@@ -117,6 +130,7 @@ export const treeProtectionPage = {
   },
   intro:
     "We install temporary fencing for site boundaries, exclusion zones and tree protection areas. Solutions can be adapted to different ground conditions, wind-loading requirements and environmental constraints, with specifications aligned to BS 5837:2012 where required.",
+  exploreLabel: "Explore Tree Protection Services",
   items: [
     "BS 5837:2012 tree protection fencing",
     "Heras fencing installed on timber posts",
